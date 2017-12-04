@@ -1,7 +1,7 @@
 {
-  "name": "matrix",
+  "name": "matrix-not-found-page",
   "version": "1.0.0",
-  "description": "Matrix animation",
+  "description": "Not found page in matrix style built with LOVE and gratefullness for Ezetech company",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
@@ -10,7 +10,9 @@
   },
   "keywords": [
     "Matrix",
-    "scss"
+    "scss",
+    "webpack",
+    "404"
   ],
   "author": "NikIvan",
   "license": "MIT",
