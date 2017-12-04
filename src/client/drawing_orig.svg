@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="drawing_orig.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4146">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4148" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4150" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4146"
+       id="linearGradient4154"
+       gradientUnits="userSpaceOnUse"
+       x1="60.739062"
+       y1="112.22708"
+       x2="226.26094"
+       y2="112.22708" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="323.9103"
+     inkscape:cy="757.97137"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#252525;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect4156"
+       width="255.71428"
+       height="143.57143"
+       x="276.35715"
+       y="62.584229" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4138"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Yu Mincho';-inkscape-font-specification:'Yu Mincho';letter-spacing:0px;word-spacing:0px;fill:#acb8ae;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(260.71428,22.142857)"><flowRegion
+         id="flowRegion4140"
+         style="fill:url(#linearGradient4154);fill-opacity:1"><rect
+           id="rect4142"
+           width="205.71005"
+           height="126.87822"
+           x="53.538086"
+           y="49.280727"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Yu Mincho';-inkscape-font-specification:'Yu Mincho';fill:#acb8ae;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara4144"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#acb8ae;fill-opacity:1">404</flowPara></flowRoot>    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       d="M 266.42773 276.29102 L 266.42773 419.86133 L 522.14258 419.86133 L 522.14258 276.29102 L 266.42773 276.29102 z M 331.72461 312.52734 L 338.72461 315.52734 L 320.42383 359.02734 L 340.22461 359.02734 L 340.92383 339.52734 L 348.22461 339.52734 L 348.22461 359.02734 L 357.125 359.02734 L 357.125 365.82617 L 348.22461 365.82617 L 348.22461 382.52734 L 340.125 382.52734 L 340.125 365.82617 L 311.52539 365.82617 L 311.52539 359.62695 L 331.72461 312.52734 z M 394.28516 312.52734 C 401.61849 312.52734 407.18633 315.59323 410.98633 321.72656 C 414.85299 327.79323 416.78516 336.56068 416.78516 348.02734 C 416.78516 359.56068 414.85299 368.39401 410.98633 374.52734 C 407.18633 380.59401 401.61849 383.62695 394.28516 383.62695 C 386.95182 383.62695 381.35299 380.59401 377.48633 374.52734 C 373.68633 368.39401 371.78516 359.56068 371.78516 348.02734 C 371.78516 336.56068 373.68633 327.79323 377.48633 321.72656 C 381.35299 315.59323 386.95182 312.52734 394.28516 312.52734 z M 451.64648 312.52734 L 458.64648 315.52734 L 440.3457 359.02734 L 460.14648 359.02734 L 460.8457 339.52734 L 468.14648 339.52734 L 468.14648 359.02734 L 477.04688 359.02734 L 477.04688 365.82617 L 468.14648 365.82617 L 468.14648 382.52734 L 460.04688 382.52734 L 460.04688 365.82617 L 431.44727 365.82617 L 431.44727 359.62695 L 451.64648 312.52734 z M 394.28516 319.32617 C 385.15182 319.32617 380.58594 328.89401 380.58594 348.02734 C 380.58594 367.22734 385.15182 376.82617 394.28516 376.82617 C 403.41849 376.82617 407.98633 367.22734 407.98633 348.02734 C 407.98633 328.89401 403.41849 319.32617 394.28516 319.32617 z M 394.28516 341.52734 C 396.15182 341.52734 397.71966 342.15911 398.98633 343.42578 C 400.25299 344.69245 400.88477 346.22734 400.88477 348.02734 C 400.88477 349.89401 400.25299 351.4599 398.98633 352.72656 C 397.71966 353.99323 396.15182 354.62695 394.28516 354.62695 C 392.41849 354.62695 390.8526 353.99323 389.58594 352.72656 C 388.38594 351.4599 387.78516 349.89401 387.78516 348.02734 C 387.78516 346.22734 388.38594 344.69245 389.58594 343.42578 C 390.8526 342.15911 392.41849 341.52734 394.28516 341.52734 z "
+       id="rect4156-4" />
+  </g>
+</svg>
