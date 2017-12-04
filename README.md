@@ -1,6 +1,10 @@
 # matrix-not-found-page
 Not found page in matrix style built with ♥ and gratefullness for Ezetech company
 
+Install depedencies:
+
+```npm install```
+
 To start development run:
 
 ```npm run start```
