@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge').merge;
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const AssetsPlugin = require('assets-webpack-plugin');
 const autoprefixer = require('autoprefixer');
@@ -12,8 +11,8 @@ module.exports = merge(common, {
   devtool: 'source-map',
   mode: 'production',
   output: {
-    filename: 'scripts/[name].[chunkhash].js',
-    chunkFilename: 'scripts/[name].[chunkhash].js',
+    filename: 'scripts/[name].js',
+    chunkFilename: 'scripts/[id].[chunkhash].js',
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -21,9 +20,6 @@ module.exports = merge(common, {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"',
-    }),
-    new UglifyJSPlugin({
-      sourceMap: false,
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
@@ -66,7 +62,7 @@ module.exports = merge(common, {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: false,
               importLoaders: 1,
             },
           },

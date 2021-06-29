@@ -13,7 +13,6 @@ module.exports = {
     path: path.join(__dirname, './build/client'),
     filename: 'scripts/[name].js',
     chunkFilename: 'scripts/[name].js',
-    sourceMapFilename: 'bundle.js.map'
   },
   resolve: {
     modules: ['src', 'node_modules'],
