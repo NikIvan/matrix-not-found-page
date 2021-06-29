@@ -1,8 +1,7 @@
 'use strict';
 
 const path = require('path');
-const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -20,31 +19,11 @@ module.exports = {
     modules: ['src', 'node_modules'],
   },
   plugins: [
-    new CleanWebpackPlugin([path.join(__dirname, './build/client')]),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       hash: true,
       template: path.join(__dirname, './src/client/boot/index.ejs'),
       inject: true,
-    }),
-    /**
-     * Move modules that occur in multiple entry chunks to a new entry chunk
-     * (the commons chunk).
-     * [https://webpack.js.org/plugins/commons-chunk-plugin/]
-     */
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      chunks: ['bundle'],
-      minChunks: function(module) {
-        // this assumes your vendor imports exist in the node_modules directory
-        return module.context && module.context.indexOf('node_modules') !== -1;
-      },
-    }),
-    // CommonChunksPlugin will now extract all the common modules
-    // from vendor and main bundles
-    new webpack.optimize.CommonsChunkPlugin({
-      // But since there are no more common modules between them
-      // we end up with just the runtime code included in the manifest file
-      name: 'manifest',
     }),
   ],
   module: {
@@ -59,9 +38,8 @@ module.exports = {
               cacheDirectory: true,
               sourceMaps: 'inline',
               presets: [
-                ['react'],
-                ['stage-2'],
-                ['env', {
+                ['@babel/preset-react'],
+                ['@babel/preset-env', {
                   targets: {
                     browsers: [
                       "last 6 versions",
@@ -72,38 +50,17 @@ module.exports = {
                   modules: false,
                 }],
               ],
-              plugins: ["transform-runtime"],
+              plugins: ["@babel/plugin-transform-runtime"],
             },
           },
         ],
       },
-      {
-        test: /\.(ico)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'images/[name].[ext]',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {name: 'fonts/[name].[ext]'},
-          },
-        ],
-      },
-      // {
-      //   test: /\.svg$/,
-      //   loader: 'svg-inline-loader?classPrefix'
-      // },
       {
         test: /\.svg$/,
-        loader: 'file-loader'
+        loader: 'file-loader',
+        options: {
+          esModule: false,
+        },
       },
       {
         test: /\.html$/,

@@ -2,13 +2,14 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
-const merge = require('webpack-merge');
+const merge = require('webpack-merge').merge;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
+  mode: 'development',
   devServer: {
     contentBase: path.join(__dirname, 'build/client'),
     hot: true,
@@ -23,43 +24,47 @@ module.exports = merge(common, {
     },
   },
   plugins: [
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"development"',
     }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
   ],
+  optimization: {
+    moduleIds: 'named',
+  },
   module: {
     rules: [
       {
-        test: /\.(scss|css)$/,
+        test: /\.scss$/,
         use: [
-          {
-            loader: 'style-loader',
-          },
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              localIdentName: '[local]',
-              // localIdentName: '[name]__[local]___[hash:base64:5]',
+              modules: false,
+              importLoaders: 1,
             },
           },
           {
             loader: 'postcss-loader',
             options: {
-              parser: 'postcss-scss',
-              plugins: () => {
-                return [
-                  autoprefixer({browsers: ['last 2 versions']}),
-                ];
+              postcssOptions: {
+                plugins: [
+                  [
+                    "autoprefixer",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
               },
             },
           },
-          {
-            loader: 'sass-loader',
-          },
+          'sass-loader',
         ],
       },
       {

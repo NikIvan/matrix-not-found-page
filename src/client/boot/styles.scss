@@ -29,14 +29,6 @@ $frames-count: $matrix-height;
   @return $result;
 }
 
-@function create-columns($number) {
-  $columns: ();
-  @for $i from 1 through $height {
-    $columns: append($columns, new-column($matrix-height));
-  }
-  @return $columns;
-}
-
 div,
 section,
 body {
@@ -97,13 +89,13 @@ body {
     white-space: normal;
     vertical-align: top;
 
-    &:before :global {
+    &:before {
       display: block;
       width: 1em;
       content: "#{$column}";
     }
 
-    &:after :global {
+    &:after {
       box-sizing: border-box;
       background: linear-gradient(
                       rgba(black, 1) 0,
